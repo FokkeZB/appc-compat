@@ -13,7 +13,7 @@ var compat = require('appc-compat');
 
 compat.ti(['info', '-t', 'ios'], {
 	// options
-}, funciton(err, stdout, stderr) {
+}, function(err, stdout, stderr) {
 	// do something
 });
 ```
