@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var main = require('../');
+
+var COMMANDS = ['ti', 'titanium', 'alloy', 'acs'];
+
+(function run() {
+	var args = process.argv.slice(2);
+
+	var cmd = args.shift();
+
+	if (COMMANDS.indexOf(cmd) === -1) {
+		console.error('Error: Invalid command: ' + cmd);
+		process.exit(1);
+	}
+
+	var opts = {
+		stdio: 'inherit'
+	};
+
+	var i = args.indexOf('--prefer-appc');
+
+	if (i !== -1) {
+		opts.preferAppc = true;
+		args.splice(i, 1);
+	}
+
+	main[cmd](args, opts);
+
+})();

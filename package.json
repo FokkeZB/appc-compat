@@ -1,0 +1,30 @@
+{
+  "name": "appc-compat",
+  "version": "1.0.0",
+  "description": "Intermediator for the new Appcelerator \"appc\" CLI and the old \"ti\", \"alloy\" and \"acs\" CLI.",
+  "main": "index.js",
+  "bin": {
+    "appc-compat": "./bin/cli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fokkezb/appc-compat.git"
+  },
+  "keywords": [
+    "appcelerator",
+    "titanium",
+    "cli"
+  ],
+  "author": "Fokke Zandbergen <mail@fokkezb.nl>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fokkezb/appc-compat/issues"
+  },
+  "homepage": "https://github.com/fokkezb/appc-compat#readme",
+  "dependencies": {
+    "deasync": "^0.1.0"
+  }
+}
