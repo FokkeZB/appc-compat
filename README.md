@@ -1,4 +1,4 @@
-# Appcelerator CLI Compatability
+# Appcelerator CLI Compatibility
 
 Since 4.0, the Appcelerator Platform has a single [`appc`](http://docs.appcelerator.com/platform/latest/#!/guide/Appcelerator_Command-Line_Interface_Reference) CLI that bundles local versions of the former [`ti`](https://npmjs.com/titanium), [`alloy`](https://npmjs.com/alloy) and [`acs`](https://npmjs.com/acs) CLI. You can still use the embedded CLIs by calling `appc ti` instead of `ti`. You can also still install the other three CLIs directly from NPM, in particular to work on projects that you have not (yet) migrated from the OSS software to the Appcelerator Platform.
 
@@ -13,7 +13,7 @@ var compat = require('appc-compat');
 
 compat.ti(['info', '-t', 'ios'], {
 	// options
-}, funciton(err, stdout, stderr) {
+}, function(err, stdout, stderr) {
 	// do something
 });
 ```
