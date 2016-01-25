@@ -1,6 +1,6 @@
 {
   "name": "appc-compat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Intermediator for the new Appcelerator \"appc\" CLI and the old \"ti\", \"alloy\" and \"acs\" CLI.",
   "main": "index.js",
   "bin": {
