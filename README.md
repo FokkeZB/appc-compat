@@ -13,7 +13,7 @@ var compat = require('appc-compat');
 
 compat.ti(['info', '-t', 'ios'], {
 	// options
-}, function(err, stdout, stderr) {
+}, function(err, out, code) {
 	// do something
 });
 ```
@@ -21,7 +21,7 @@ compat.ti(['info', '-t', 'ios'], {
 Other available methods are:
 
 * `compat.spawn(cmd, args, opts, cb);`
-* `compat.spawnSync(cmd, args, opts);` 
+* `compat.spawnSync(cmd, args, opts);`
 * `compat.tiSync(args, opts);`
 * `compat.titanium(args, opts, cb);`
 * `compat.titaniumSync(args, opts);`
